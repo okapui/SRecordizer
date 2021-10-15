@@ -109,7 +109,7 @@
             this.s19ListView.AllColumns.Add(this.asciiColumn);
             this.s19ListView.AlternateRowBackColor = System.Drawing.Color.WhiteSmoke;
             this.s19ListView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.s19ListView.CellEditActivation = BrightIdeasSoftware.ObjectListView.CellEditActivateMode.SingleClick;
+            this.s19ListView.CellEditActivation = BrightIdeasSoftware.ObjectListView.CellEditActivateMode.DoubleClick;
             this.s19ListView.CellEditEnterChangesRows = true;
             this.s19ListView.CellEditTabChangesRows = true;
             this.s19ListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -128,6 +128,7 @@
             this.s19ListView.GridLines = true;
             this.s19ListView.HasCollapsibleGroups = false;
             this.s19ListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.s19ListView.HideSelection = false;
             this.s19ListView.HighlightBackgroundColor = System.Drawing.Color.Purple;
             this.s19ListView.HighlightForegroundColor = System.Drawing.Color.Yellow;
             this.s19ListView.Location = new System.Drawing.Point(0, 0);
