@@ -118,7 +118,7 @@ namespace SRecordizer
             if (fileNames == null)
             {
                 OpenFileDialog openFiles = new OpenFileDialog();
-                openFiles.Filter = "S-Record Files|*.s19;*.mhx|All Files (*.*)|*.*";
+                openFiles.Filter = "S-Record Files|*.s19;*.mhx;*.mot|All Files (*.*)|*.*";
                 openFiles.FilterIndex = 1;
                 openFiles.Multiselect = true;
                 openFiles.RestoreDirectory = true;
@@ -171,7 +171,7 @@ namespace SRecordizer
             if (activeDoc != null)
             {
                 SaveFileDialog saveFile = new SaveFileDialog();
-                saveFile.Filter = "S-Record Files|*.s19;*.mhx|All Files (*.*)|*.*";
+                saveFile.Filter = "S-Record Files|*.s19;*.mhx;*.mot|All Files (*.*)|*.*";
                 saveFile.FilterIndex = 1;
                 saveFile.RestoreDirectory = true;
                 saveFile.ShowDialog();
