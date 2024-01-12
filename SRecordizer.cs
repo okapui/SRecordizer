@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -767,11 +767,6 @@ namespace SRecordizer
             lineNumberBox.Focus();
         }
         #endregion
-
-        private void insertRowAboveToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-
-        }
         #endregion     
     }
 }

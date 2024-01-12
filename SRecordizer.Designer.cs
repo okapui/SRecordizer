@@ -1,4 +1,4 @@
-﻿namespace SRecordizer
+namespace SRecordizer
 {
     partial class SRecordizer
     {
@@ -427,7 +427,7 @@
             this.insertRowAboveToolStripMenuItem1.Name = "insertRowAboveToolStripMenuItem1";
             this.insertRowAboveToolStripMenuItem1.Size = new System.Drawing.Size(217, 22);
             this.insertRowAboveToolStripMenuItem1.Text = "Insert Row (&Above Current)";
-            this.insertRowAboveToolStripMenuItem1.Click += new System.EventHandler(this.insertRowAboveToolStripMenuItem1_Click);
+			this.insertRowAboveToolStripMenuItem1.Click += new System.EventHandler(this.insertAboveTsButton_Click);
             // 
             // insertRowBelowToolStripMenuItem1
             // 
@@ -443,6 +443,7 @@
             this.deleteRowToolStripMenuItem1.Name = "deleteRowToolStripMenuItem1";
             this.deleteRowToolStripMenuItem1.Size = new System.Drawing.Size(217, 22);
             this.deleteRowToolStripMenuItem1.Text = "&Delete Current Row";
+			this.deleteRowToolStripMenuItem1.Click += new System.EventHandler(this.deleteRowTsButton_Click);
             // 
             // toolStripSeparator4
             // 
@@ -455,6 +456,7 @@
             this.dataByteSpacingToolStripMenuItem.Name = "dataByteSpacingToolStripMenuItem";
             this.dataByteSpacingToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.dataByteSpacingToolStripMenuItem.Text = "Toggle Data Byte &Spacing";
+			this.dataByteSpacingToolStripMenuItem.Click += new System.EventHandler(this.btnByteSpacing_Click);
             // 
             // viewASCIIToolStripMenuItem
             // 
@@ -480,6 +482,7 @@
             this.jumpToTopToolStripMenuItem.Name = "jumpToTopToolStripMenuItem";
             this.jumpToTopToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.jumpToTopToolStripMenuItem.Text = "Jump to Top";
+			this.jumpToTopToolStripMenuItem.Click += new System.EventHandler(this.jumpToTopTsButton_Click);
             // 
             // jumpToLineToolStripMenuItem
             // 
@@ -487,6 +490,7 @@
             this.jumpToLineToolStripMenuItem.Name = "jumpToLineToolStripMenuItem";
             this.jumpToLineToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.jumpToLineToolStripMenuItem.Text = "Jump to Line (Dec)";
+			this.jumpToLineToolStripMenuItem.Click += new System.EventHandler(this.jumpToAddressTsButton_Click);
             // 
             // jumpToAddressHexToolStripMenuItem
             // 
@@ -494,6 +498,7 @@
             this.jumpToAddressHexToolStripMenuItem.Name = "jumpToAddressHexToolStripMenuItem";
             this.jumpToAddressHexToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.jumpToAddressHexToolStripMenuItem.Text = "Jump to Address (Hex)";
+			this.jumpToAddressHexToolStripMenuItem.Click += new System.EventHandler(this.goToAddressTsButton_Click);
             // 
             // findInASCIIToolStripMenuItem
             // 
@@ -501,6 +506,7 @@
             this.findInASCIIToolStripMenuItem.Name = "findInASCIIToolStripMenuItem";
             this.findInASCIIToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.findInASCIIToolStripMenuItem.Text = "Find in ASCII";
+			this.findInASCIIToolStripMenuItem.Click += new System.EventHandler(this.asciiTsButton_Click);
             // 
             // checkToolStripMenuItem
             // 
@@ -517,6 +523,7 @@
             this.checkSRecordsCorrectnessToolStripMenuItem.Name = "checkSRecordsCorrectnessToolStripMenuItem";
             this.checkSRecordsCorrectnessToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
             this.checkSRecordsCorrectnessToolStripMenuItem.Text = "Check SRecords Correctness";
+			this.checkSRecordsCorrectnessToolStripMenuItem.Click += new System.EventHandler(this.checkTsButton_Click);
             // 
             // removeCheckAnalysisHiglightingToolStripMenuItem
             // 
@@ -524,6 +531,7 @@
             this.removeCheckAnalysisHiglightingToolStripMenuItem.Name = "removeCheckAnalysisHiglightingToolStripMenuItem";
             this.removeCheckAnalysisHiglightingToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
             this.removeCheckAnalysisHiglightingToolStripMenuItem.Text = "Remove Check Analysis Higlighting";
+			this.removeCheckAnalysisHiglightingToolStripMenuItem.Click += new System.EventHandler(this.clearRowColorsTsButton_Click);
             // 
             // toolStripContainer1
             // 
