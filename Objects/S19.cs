@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,6 +29,8 @@ namespace SRecordizer.Objects
         #region _CONSTRUCTORS_
         public S19(string file, bool newFile)
         {
+            SRecordLines = new List<S19Line>();
+
             if (!newFile)
             {
                 FileInfo inf = new FileInfo(file);
@@ -64,7 +66,6 @@ namespace SRecordizer.Objects
         {
             try
             {
-                SRecordLines = new List<S19Line>();
                 bool flag24BitAddrUsed = false, flag32BitAddrUsed = false; 
                 string line;
 

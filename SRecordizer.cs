@@ -104,7 +104,10 @@ namespace SRecordizer
         /// </summary>
         void NewSrecordFile()
         {
-            /* todo open doc using S19 template */
+            string tempFile = Path.Combine(Path.GetTempPath(), Path.GetTempFileName());
+            SRecordView pane = new SRecordView(tempFile, true);
+            pane.Show(dockPanel);
+            _SRecPanes.Add(pane);
             _OpenDocCounter++;
         }
 
