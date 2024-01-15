@@ -51,6 +51,7 @@ namespace SRecordizer.Objects
         #region _PUBLIC_METHODS_
         public void InsertRow(int rowNum)
         {
+            if (rowNum == -1) rowNum = 0;
             S19Line line = new S19Line();
             SRecordLines.Insert(rowNum, line);
             UpdateLineNumbering();
@@ -58,6 +59,7 @@ namespace SRecordizer.Objects
 
         public void DeleteRow(int rowNum)
         {
+            if (rowNum == -1) return;
             SRecordLines.RemoveAt(rowNum);
             UpdateLineNumbering();
         }
