@@ -280,9 +280,16 @@ namespace SRecordizer
             {
                 if (e.KeyChar == '\r')
                 {
-                    int addr = System.Convert.ToInt32(addressBox.Text, 16);
-                    activeDoc.GoToAddress(addr);
-                    addressBox.Visible = false;
+                 try
+                    {
+                        int addr = System.Convert.ToInt32(addressBox.Text, 16);
+                        activeDoc.GoToAddress(addr);
+                        addressBox.Visible = false;
+                    }
+                    catch
+                    {
+                        ExceptionTrap.Trap("Error with address entered!");
+                    }
                 }
             }
         }
