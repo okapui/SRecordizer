@@ -614,6 +614,7 @@ namespace SRecordizer
             // 
             this.s19Toolstrip.AutoSize = false;
             this.s19Toolstrip.Dock = System.Windows.Forms.DockStyle.None;
+			this.s19Toolstrip.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.s19Toolstrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.insertAboveTsButton,
             this.insertBelowTsButton,
@@ -788,6 +789,7 @@ namespace SRecordizer
             // mainToolstrip
             // 
             this.mainToolstrip.Dock = System.Windows.Forms.DockStyle.None;
+			this.mainToolstrip.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.mainToolstrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.NewTsButton,
             this.openTsButton,
