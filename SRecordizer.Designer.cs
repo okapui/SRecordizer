@@ -93,6 +93,8 @@ namespace SRecordizer
             this.checkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checkSRecordsCorrectnessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeCheckAnalysisHiglightingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.helpToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+			this.versionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.dockPanel = new WeifenLuo.WinFormsUI.Docking.DockPanel();
             this.s19Toolstrip = new System.Windows.Forms.ToolStrip();
@@ -358,7 +360,8 @@ namespace SRecordizer
             this.fileToolStripMenuItem1,
             this.editToolStripMenuItem1,
             this.findToolStripMenuItem,
-            this.checkToolStripMenuItem});
+            this.checkToolStripMenuItem,
+            this.helpToolStripMenuItem2});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(845, 24);
@@ -532,7 +535,22 @@ namespace SRecordizer
             this.removeCheckAnalysisHiglightingToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
             this.removeCheckAnalysisHiglightingToolStripMenuItem.Text = "Remove Check Analysis Higlighting";
 			this.removeCheckAnalysisHiglightingToolStripMenuItem.Click += new System.EventHandler(this.clearRowColorsTsButton_Click);
-            // 
+			// 
+			// helpToolStripMenuItem2
+			// 
+			this.helpToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.versionToolStripMenuItem});
+			this.helpToolStripMenuItem2.Name = "helpToolStripMenuItem2";
+			this.helpToolStripMenuItem2.Size = new System.Drawing.Size(44, 20);
+			this.helpToolStripMenuItem2.Text = "&Help";
+			// 
+			// versionToolStripMenuItem
+			// 
+			this.versionToolStripMenuItem.Name = "versionToolStripMenuItem";
+			this.versionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.versionToolStripMenuItem.Text = "Version";
+			this.versionToolStripMenuItem.Click += new System.EventHandler(this.versionToolStripMenuItem_Click);
+			// 
             // toolStripContainer1
             // 
             // 
@@ -851,7 +869,7 @@ namespace SRecordizer
             this.optionsTsButton.Text = "Options";
             this.optionsTsButton.Visible = false;
             this.optionsTsButton.Click += new System.EventHandler(this.optionsTsButton_Click);
-            // 
+            //
             // SRecordizer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -963,6 +981,8 @@ namespace SRecordizer
         private System.Windows.Forms.ToolStripMenuItem viewASCIIToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem checkSRecordsCorrectnessToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem removeCheckAnalysisHiglightingToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem2;
+		private System.Windows.Forms.ToolStripMenuItem versionToolStripMenuItem;
     }
 }
 

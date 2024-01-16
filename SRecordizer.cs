@@ -776,6 +776,17 @@ namespace SRecordizer
             lineNumberBox.Visible = true;
             lineNumberBox.Focus();
         }
+
+        /*********************************************************************/
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+		private void versionToolStripMenuItem_Click(object sender, EventArgs e) {
+            AboutBox dlg = new AboutBox();
+            dlg.ShowDialog();
+		}
         #endregion
         #endregion     
     }
