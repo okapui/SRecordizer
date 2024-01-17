@@ -509,7 +509,7 @@ namespace SRecordizer
             this.findInASCIIToolStripMenuItem.Name = "findInASCIIToolStripMenuItem";
             this.findInASCIIToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.findInASCIIToolStripMenuItem.Text = "Find in ASCII";
-			this.findInASCIIToolStripMenuItem.Click += new System.EventHandler(this.asciiTsButton_Click);
+			this.findInASCIIToolStripMenuItem.Click += new System.EventHandler(this.findTsButton_Click);
             // 
             // checkToolStripMenuItem
             // 
