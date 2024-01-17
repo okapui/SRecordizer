@@ -213,6 +213,14 @@ namespace SRecordizer
 
             mainToolstrip.Location = new Point(0, 0);
             s19Toolstrip.Location = new Point(mainToolstrip.Width, 0);
+
+            var args = Environment.GetCommandLineArgs().ToList();
+
+            if (args.Count > 1)
+            {
+                args.RemoveAt(0);
+                OpenSrecordFile(args.ToArray());
+            }
         }
 
         /*********************************************************************/
